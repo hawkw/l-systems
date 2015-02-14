@@ -1,5 +1,5 @@
 package me.hawkweisman.lsystems
-package samples
+package grammars
 
 object Fern extends LSystem(
   25f,

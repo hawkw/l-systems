@@ -1,5 +1,5 @@
 package me.hawkweisman.lsystems
-package samples
+package grammars
 
 import me.hawkweisman.lsystems.turtle._
 
