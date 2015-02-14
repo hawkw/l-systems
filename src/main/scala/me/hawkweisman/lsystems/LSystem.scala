@@ -8,7 +8,7 @@ import me.hawkweisman.lsystems.turtle.Command
 case class LSystem (
   angle: Float,
   rules: Map[Char,String],
-  commands: Map[String,Command],
+  commands: Map[Char,Command],
   start: String
 ) {
   def first: LSystemIteration = LSystemIteration(this,start,0)
