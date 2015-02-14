@@ -10,7 +10,7 @@ object PythagorasTree extends LSystem(
   45,
   Map(
     '1' -> "11",
-    '0' -> "1[-0+]0"
+    '0' -> "1[-0]+0"
   ),
   Map(
     '1' -> Forward,
