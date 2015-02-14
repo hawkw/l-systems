@@ -2,7 +2,7 @@ package lsystems
 
 import me.hawkweisman.lsystems.LSystemIteration
 import me.hawkweisman.lsystems.samples.{SierpinskiLSystem, PythagorasTree}
-import me.hawkweisman.lsystems.turtle.{Push,TurnLeft,TurnRight,Pop,Forward, Turtle, Command}
+import me.hawkweisman.lsystems.turtle.{Push,TurnLeft,TurnRight,Pop,Forward, Command}
 import processing.core._
 import PConstants._
 import PApplet._

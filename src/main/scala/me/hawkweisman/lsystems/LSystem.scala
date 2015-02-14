@@ -1,6 +1,6 @@
 package me.hawkweisman.lsystems
 
-import me.hawkweisman.lsystems.turtle.{Turtle, Command}
+import me.hawkweisman.lsystems.turtle.Command
 
 /**
  * Created by hawk on 2/14/15.
