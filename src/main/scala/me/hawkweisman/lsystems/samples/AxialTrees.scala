@@ -10,7 +10,7 @@ object AxialTree {
     '+' -> TurnRight,
     '[' -> Push,
     ']' -> Pop
-  ),
+  )
 }
 
 object AxialTreeA extends LSystem(
