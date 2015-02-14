@@ -15,3 +15,4 @@ case object TurnLeft extends Command
 case object TurnRight extends Command
 case object Push extends Command
 case object Pop extends Command
+case object Nop extends Command

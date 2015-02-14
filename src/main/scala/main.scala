@@ -1,14 +1,14 @@
 package lsystems
 
 import me.hawkweisman.lsystems.LSystemIteration
-import me.hawkweisman.lsystems.samples.{SierpinskiLSystem, PythagorasTree}
+import me.hawkweisman.lsystems.samples.{SierpinskiLSystem, PythagorasTree, AxialTreeA, AxialTreeB}
 import me.hawkweisman.lsystems.turtle.{Push,TurnLeft,TurnRight,Pop,Forward, Command}
 import processing.core._
 import PConstants._
 import PApplet._
 
 class Main extends PApplet {
-  var lastIter = SierpinskiLSystem.first.next // if you want to try other l-systems, use this
+  var lastIter = AxialTreeB.first.next // if you want to try other l-systems, use this
   var steps = 0
   var dist = 25f
 
@@ -25,6 +25,7 @@ class Main extends PApplet {
         case TurnRight => rotate(radians(-it.sys.angle))
         case Push => pushMatrix()
         case Pop => popMatrix()
+        case Nop => {}
       }
     }
   }
@@ -45,7 +46,7 @@ class Main extends PApplet {
     // I speak from experience.
     background(0)
     lastIter = lastIter.next
-    dist = dist/1.3f
+    dist = dist/1.4f
   }
 }
 
