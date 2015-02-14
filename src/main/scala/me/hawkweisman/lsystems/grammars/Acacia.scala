@@ -1,7 +1,7 @@
 package me.hawkweisman.lsystems
 package grammars
 
-object Fern extends LSystem(
+object Acacia extends LSystem(
   25f,
   Map(
     'X' -> "F-[[X]+X]+F[+FX]-X",
