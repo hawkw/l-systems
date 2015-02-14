@@ -1,14 +1,14 @@
 package lsystems
 
 import me.hawkweisman.lsystems.LSystemIteration
-import me.hawkweisman.lsystems.grammars.{SierpinskiTriangle, PythagorasTree, AxialTreeA, AxialTreeB,Acacia}
+import me.hawkweisman.lsystems.grammars.{SierpinskiTriangle, PythagorasTree, AxialTreeA, AxialTreeB,Acacia,DragonCurve}
 import me.hawkweisman.lsystems.turtle.{Push,TurnLeft,TurnRight,Pop,Forward,Nop, Command}
 import processing.core._
 import PConstants._
 import PApplet._
 
 class Main extends PApplet {
-  var lastIter = Acacia.first.next // if you want to try other l-systems, use this
+  var lastIter = DragonCurve.first.next // if you want to try other l-systems, use this
   var steps = 0
   var dist = 25f
 
@@ -46,7 +46,7 @@ class Main extends PApplet {
     // I speak from experience.
     background(0)
     lastIter = lastIter.next
-    dist = dist/1.4f
+    dist = dist/1.5f
   }
 }
 
