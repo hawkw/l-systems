@@ -8,7 +8,7 @@ import PConstants._
 import PApplet._
 
 class Main extends PApplet {
-  var lastIter = SierpinskiLSystem.first.next
+  var lastIter = SierpinskiLSystem.first.next // if you want to try other l-systems, use this
   var steps = 0
   var dist = 25f
 
@@ -40,9 +40,12 @@ class Main extends PApplet {
     drawIter(lastIter)
   }
   override def mousePressed: Unit = {
+    // Advance to the next iteration of the L-system
+    // Don't do this too many times or it will make your computer melt.
+    // I speak from experience.
     background(0)
     lastIter = lastIter.next
-    dist = dist/1.5f
+    dist = dist/1.3f
   }
 }
 
