@@ -10,16 +10,17 @@ import PApplet._
 class Main extends PApplet {
   var lastIter = SierpinskiLSystem.first
   var steps = 0
+  val DIST = 2f
 
   def drawIter(it: LSystemIteration) = {
-    translate(width/2,height/2)
+    translate(0,height/4)
     steps += 5
     println(it.string.take(steps))
     for (ch <- it.string.take(steps)) {
       it.sys.commands(ch) match {
         case Forward =>
-          line(0,0,10,10)
-          translate(10,10)
+          line(0,0,DIST,DIST)
+          translate(DIST,DIST)
         case TurnLeft => rotate(radians(it.sys.angle))
         case TurnRight => rotate(radians(-it.sys.angle))
         case Push => pushMatrix()
@@ -37,7 +38,7 @@ class Main extends PApplet {
 
   override def draw: Unit = {
     drawIter(lastIter)
-    if (lastIter.generation < 6) lastIter = lastIter.next
+    if (lastIter.generation < 10) lastIter = lastIter.next
   }
 }
 
