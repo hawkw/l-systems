@@ -1,14 +1,14 @@
 package lsystems
 
 import me.hawkweisman.lsystems.LSystemIteration
-import me.hawkweisman.lsystems.samples.{SierpinskiLSystem, PythagorasTree, AxialTreeA, AxialTreeB}
-import me.hawkweisman.lsystems.turtle.{Push,TurnLeft,TurnRight,Pop,Forward, Command}
+import me.hawkweisman.lsystems.samples.{SierpinskiLSystem, PythagorasTree, AxialTreeA, AxialTreeB,Fern}
+import me.hawkweisman.lsystems.turtle.{Push,TurnLeft,TurnRight,Pop,Forward,Nop, Command}
 import processing.core._
 import PConstants._
 import PApplet._
 
 class Main extends PApplet {
-  var lastIter = AxialTreeB.first.next // if you want to try other l-systems, use this
+  var lastIter = Fern.first.next // if you want to try other l-systems, use this
   var steps = 0
   var dist = 25f
 

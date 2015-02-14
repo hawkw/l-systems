@@ -5,6 +5,7 @@ import me.hawkweisman.lsystems.turtle._
 
 /**
  * Created by hawk on 2/14/15.
+ * After seven or eight iterations this makes procelling crash. Just fyi.
  */
 object PythagorasTree extends LSystem(
   45,

@@ -9,7 +9,8 @@ object AxialTree {
     '-' -> TurnLeft,
     '+' -> TurnRight,
     '[' -> Push,
-    ']' -> Pop
+    ']' -> Pop,
+    'X' -> Nop
   )
 }
 
