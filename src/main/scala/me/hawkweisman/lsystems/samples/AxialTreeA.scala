@@ -4,7 +4,7 @@ package samples
 import me.hawkweisman.lsystems.turtle._
 
 object AxialTreeA extends LSystem(
-  45,
+  25.7f,
   Map(
     'F' -> "F[+F]F[-F]F"
   ),
