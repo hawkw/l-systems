@@ -7,3 +7,4 @@ Currently it draws a Sierpinski triangle. Clicking goes to the next iteration of
 ![sierpinski](https://github.com/hawkw/l-systems/blob/master/doc/sierpinski-1.png)
 ![also sierpinski](https://github.com/hawkw/l-systems/blob/master/doc/sierpinski-2.png)
 ![still sierpinski](https://github.com/hawkw/l-systems/blob/master/doc/sierpinski-3.png)
+![pythagoras](https://github.com/hawkw/l-systems/blob/master/doc/pythagoras.png)
