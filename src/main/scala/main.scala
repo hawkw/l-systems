@@ -13,7 +13,7 @@ class Main extends PApplet {
   var dist = 25f
 
   def drawIter(it: LSystemIteration) = {
-    translate(width/2,height/2)
+    translate(50,height/3)
     steps += 5
     println(it.string.take(steps))
     for (ch <- it.string.take(steps)) {
