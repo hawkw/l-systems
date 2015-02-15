@@ -8,14 +8,14 @@ import PConstants._
 import PApplet._
 
 class Main extends PApplet {
-  var lastIter = DragonCurve.first.next // if you want to try other l-systems, use this
+  var lastIter = Acacia.first.next // if you want to try other l-systems, use this
   var steps = 0
   var dist = 25f
 
   def drawIter(it: LSystemIteration) = {
-    translate(50,height/3)
+    translate(5,5) // dragon curve should probably start in the middle of the screen
     steps += 5
-    println(it.string.take(steps))
+    //println(it.string.take(steps))
     for (ch <- it.string.take(steps)) {
       it.sys.commands(ch) match {
         case Forward =>
@@ -46,7 +46,7 @@ class Main extends PApplet {
     // I speak from experience.
     background(0)
     lastIter = lastIter.next
-    dist = dist/1.5f
+    dist = dist/1.5f // comment out this line if you're doing the dragon curve
   }
 }
 
